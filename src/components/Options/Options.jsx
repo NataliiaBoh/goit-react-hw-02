@@ -19,7 +19,7 @@ export default function Options({
       ))}
       {isResetBtnVisible && (
         <button className={css.button} onClick={onResetBtnClick}>
-          Reset
+          reset
         </button>
       )}
     </div>

@@ -30,15 +30,13 @@ function App() {
   };
 
   const totalFeedback = states.good + states.neutral + states.bad;
-  const positiveFeedback = Math.round(
-    ((states.good + states.neutral) / totalFeedback) * 100
-  );
+  const positiveFeedback = Math.round((states.good / totalFeedback) * 100);
 
   return (
     <>
       <Description />
       <Options
-        options={[`Good`, `Neutral`, `Bad`]}
+        options={[`good`, `neutral`, `bad`]}
         onFeedbackBtnClick={updateFeedback}
         onResetBtnClick={resetFeedback}
         isResetBtnVisible={totalFeedback > 0}
