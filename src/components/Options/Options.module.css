@@ -1,7 +1,10 @@
 .options {
+  display: flex;
+  gap: 10px;
 }
 
 .button {
+  align-items: center;
   border-radius: 8px;
   border: 1px solid black;
 }

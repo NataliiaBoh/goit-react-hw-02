@@ -38,7 +38,7 @@ function App() {
     <>
       <Description />
       <Options
-        options={[`good`, `neutral`, `bad`]}
+        options={[`Good`, `Neutral`, `Bad`]}
         onFeedbackBtnClick={updateFeedback}
         onResetBtnClick={resetFeedback}
         isResetBtnVisible={totalFeedback > 0}
